@@ -5,8 +5,7 @@ from vocabylary import vocabylary
 cantidad = len(vocabylary)
 
 # mensaje a mostrar
-print(f' Traduce las siguientes palabras al inglés '.center(50, '-'))
-
+print(f' Traduce las siguientes {len(vocabylary)} palabras al inglés '.center(60, '-'))
 while cantidad > 0:
     values = list(vocabylary.keys())
     generateWord = random.sample(values, 1)[0]
@@ -14,7 +13,7 @@ while cantidad > 0:
 
     # Solicitamos al usuario la palabra
     print(f'{wordValue}:\n', end= '')
-    inputWord = input('-> ')
+    inputWord = input('-> ').lower()
 
     # verificamos si existe la palbra dada
     if inputWord in vocabylary:
@@ -27,7 +26,7 @@ while cantidad > 0:
                 cantidad=len(vocabylary)
                 break
             elif inputWord == key and wordValue != value:
-                print(f'Incorrect, is ({key}) not ({inputWord})\n')
+                print(f'Incorrect, is: ({generateWord}) not: ({inputWord}).\n')
     else:
         print(f'Incorrect\n is: ({generateWord}) not: ({inputWord})\n')
 else:
