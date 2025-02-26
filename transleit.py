@@ -27,8 +27,8 @@ while cantidad > 0:
                 cantidad=len(vocabylary)
                 break
             elif inputWord == key and wordValue != value:
-                print(f'Incorrect\n')
+                print(f'Incorrect, is ({key}) not ({inputWord})\n')
     else:
-        print(f'Incorrect\n')
+        print(f'Incorrect\n is: ({generateWord}) not: ({inputWord})\n')
 else:
     print('Vocabulario consolidado.')
