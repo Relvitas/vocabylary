@@ -18,12 +18,12 @@ def lista_opciones(opcion_usuario):
 
             '''
             En este bluque se realiza la comparacion
-            del datos dado por el usuario con el
-            dato almacenado en el modulo vocabylary.
+            del dato dado por el usuario con los
+            datos almacenados en el modulo vocabylary.
         
             Si este presenta un error tendra un mensaje
             en donde se le muestra la manera correcta de escribir
-            y la manera incorrecta en que digito la traduccion.
+            la palabra y la manera incorrecta en que digito la traduccion.
         
             Si todo esta bien, al usuario se le mostrara
             mensaje 'Very nice'.
